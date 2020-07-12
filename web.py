@@ -29,9 +29,9 @@ class WebBot:
 
 
 def main():
-    from_email_address = 'testgafzan@gmail.com'
-    email_subject = '朝の健康観察メール'
-    starting_url = 'https://www.con-pas.jp'
+    from_email_address = "ENTER 'FROM' ADDRESS"
+    email_subject = "ENTER SUBJECT"
+    starting_url = "ENTER FIRST PARTS OF URL"
     x_path = ''
 
     # get the url
