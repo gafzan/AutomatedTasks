@@ -14,11 +14,13 @@ logger = logging.getLogger(__name__)
 logger.addHandler(stream_handler)
 logger.setLevel(logging.INFO)
 
+__CHROMEDRIVER_FULL_PATH__ = os.environ.get('CHROMEDRIVER_FULL_PATH')
+
 
 class WebBot:
     def __init__(self):
         logger.debug('Initializing a web bot.')
-        self.driver = webdriver.Chrome(executable_path=os.environ.get('CHROMEDRIVER_FULL_PATH'))
+        self.driver = webdriver.Chrome(executable_path=__CHROMEDRIVER_FULL_PATH__)
 
     def click_button(self, url: str, x_path: str):
         logger.debug('Click a button from the following url: {}'.format(url))
