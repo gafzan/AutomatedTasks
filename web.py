@@ -31,7 +31,7 @@ class WebBot:
 def main():
     from_email_address = "ENTER 'FROM' ADDRESS"
     email_subject = "ENTER SUBJECT"
-    starting_url = "ENTER FIRST PARTS OF URL"
+    starting_url = "ENTER FIRST PARTS OF URL"  # e.g. https://www.
     x_path = ''
 
     # get the url
