@@ -1,0 +1,3 @@
+selenium  # web scraping
+beautifulsoup4  # to be able to read the HTML
+twilio  # used for SMS
