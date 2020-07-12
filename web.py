@@ -1,3 +1,4 @@
+import random
 from selenium import webdriver
 from time import sleep
 import os
@@ -25,7 +26,9 @@ class WebBot:
     def click_button(self, url: str, x_path: str):
         logger.debug('Click a button from the following url: {}'.format(url))
         self.driver.get(url)
-        sleep(2)
+        seconds_to_sleep = random.randint(2, 6)
+        logger.debug('Sleep for {} seconds.'.format(seconds_to_sleep))
+        sleep(seconds_to_sleep)
         btn = self.driver.find_element_by_xpath(x_path)
         btn.click()
 
